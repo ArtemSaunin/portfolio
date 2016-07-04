@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Clean & Clear</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="top-bar"></div>
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                  <img src="img/logo.png" alt="Logo Clean & Clear">
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                  <a href="innovate.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Innovate <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Create</a></li>
+                    <li><a href="#">Teach</a></li>
+                    <li role="separator" class="divider"></li>
+                  </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <li class="login" data-toggle="modal" data-target="#loginModal" ><a href="#">Login</a></li>
+                    <li class="register" data-toggle="modal" data-target="#regModal"><a href="#">Register</a></li>
+                  </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <!-- Login Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="loginModalLabel">Login Form</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end Login Modal -->
+
+        <!-- Register Modal -->
+        <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="regModalLabel">Register</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputName" class="col-sm-2 control-label">Name</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputName" placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword3" class="col-sm-2 control-label">Confirm Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="confirmPassword3" placeholder="Confirm Password">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end Register Modal -->
+
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-offset-5">
+                        <div class="jumbotron-content">
+                            <h1>Clean & Clear HTML5 Template</h1>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate a dolor fuga fugiat, unde commodi sed voluptas sit aut veritatis consequuntur, deserunt amet aperiam quia magnam hic, ratione, quasi ad!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="bluebox">
+                        <h3><span class="glyphicon glyphicon-book"></span> Learn...</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis posuere sem ac tempus. Curabitur aliquet metus ut purus eleifend, in cursus risus aliquam
+                        </p>
+                        <a class="readmore" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="redbox">
+                        <h3><span class="glyphicon glyphicon-eye-open"></span> Create...</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis posuere sem ac tempus. Curabitur aliquet metus ut purus eleifend, in cursus risus aliquam
+                        </p>
+                        <a class="readmore" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bluebox">
+                        <h3><span class="glyphicon glyphicon-road"></span> Teach...</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis posuere sem ac tempus. Curabitur aliquet metus ut purus eleifend, in cursus risus aliquam
+                        </p>
+                        <a class="readmore" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pad-top-20">
+                <div class="col-md-8">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">What's Happening in The World</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <a href="#" class="pull-left">
+                                    <img class="media-object img-circle" src="img/small1.jpg" alt="...">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, beatae architecto sit soluta mollitia quaerat atque maxime rem modi. Adipisci error obcaecati ad, est delectus molestias totam quas at rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat placeat deleniti cupiditate excepturi ea aperiam eveniet pariatur quo fugit debitis, consectetur, rerum, non, provident minima iusto. Soluta nostrum dolorem necessitatibus!</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a href="#" class="pull-left">
+                                    <img class="media-object img-circle" src="img/small2.jpg" alt="...">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, beatae architecto sit soluta mollitia quaerat atque maxime rem modi. Adipisci error obcaecati ad, est delectus molestias totam quas at rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat placeat deleniti cupiditate excepturi ea aperiam eveniet pariatur quo fugit debitis, consectetur, rerum, non, provident minima iusto. Soluta nostrum dolorem necessitatibus!</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a href="#" class="pull-left">
+                                    <img class="media-object img-circle" src="img/small3.jpg" alt="...">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">Media heading</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, beatae architecto sit soluta mollitia quaerat atque maxime rem modi. Adipisci error obcaecati ad, est delectus molestias totam quas at rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat placeat deleniti cupiditate excepturi ea aperiam eveniet pariatur quo fugit debitis, consectetur, rerum, non, provident minima iusto. Soluta nostrum dolorem necessitatibus!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">
+                            Cras justo odio
+                        </a>
+                        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                        <a href="#" class="list-group-item">Morbi leo risus</a>
+                        <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                        <a href="#" class="list-group-item">Vestibulum at eros</a>
+                    </div>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">
+                            <h4 class="list-group-item-heading">List group item heading</h4>
+                            <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla similique veritatis fugit totam modi ut, illum molestias culpa perspiciatis porro minima nemo consectetur suscipit ipsum iusto harum, natus voluptatem eos!</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">List group item heading</h4>
+                            <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla similique veritatis fugit totam modi ut, illum molestias culpa perspiciatis porro minima nemo consectetur suscipit ipsum iusto harum, natus voluptatem eos!</p>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">List group item heading</h4>
+                            <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla similique veritatis fugit totam modi ut, illum molestias culpa perspiciatis porro minima nemo consectetur suscipit ipsum iusto harum, natus voluptatem eos!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Copyright &copy; 2013, Clean & Clear
+        </footer>
+        <div class="bottom-bar"></div>
+  </body>
+</html>
