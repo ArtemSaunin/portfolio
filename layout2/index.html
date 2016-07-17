@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layout.02</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- jQuery -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-4  col-sm-6">
+                    <div class="logo">
+                        <a href="#page-top">Layout <span>2</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8 col-sm-6 nav">
+                    <a href="#" id="menu__icon"><i class="fa fa-bars fa-2x"></i></a>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#about">About</a></li>
+                        <li class="menu__item"><a href="#services">Services</a></li>
+                        <li class="menu__item"><a href="#gallery">Gallery</a></li>
+                        <li class="menu__item"><a href="#">Team</a></li>
+                        <li class="menu__item"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SLIDER -->
+    <div class="container-fluid">
+        <div id="slider">
+            <a class="arrow prev" href="#" onclick='Prev()'><i class="fa fa-chevron-left"></i></a>
+            <a class=" arrow next" href="#" onclick='Next()'><i class="fa fa-chevron-right"></i></a>
+            <div class="slide-wrap">
+                <div class="slide slide-first">
+                    <h1>Lorem Ipsum</h1>
+                    <p>Suspendisse potenti. Cras cursus ex nulla, ac faucibus leo susc</p>
+                    <a href="#" class="button">Start now</a>
+                </div>
+                <div class="slide slide-second">
+                    <h1>Lorem Ipsum dolor</h1>
+                    <p>Aenean id ligula aliquam dolor tristique fringilla</p>
+                    <a href="#" class="button">Start now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about" class="about container text-center">
+        <div class="row">
+            <div class="about__content col-xs-12">
+                <div class="about__header">
+                    <h4 class="section-header-top">Donec tristique rutrum</h4>
+                    <h2 class=" section-header-main">About company</h2>
+                </div>
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis dui non nulla fermentum sollicitudin. Nunc dictum finibus dui, in ornare lectus venenatis eget. Sed mollis tellus auctor lorem congue, in tincidunt leo pharetra. Nulla facilisi. Mauris sed justo consequat, pretium sem in, tempor sapien. Vestibulum maximus leo fermentum risus vehicula, nec blandit risus tincidunt. Nulla elementum congue turpis. Aenean id ligula aliquam dolor tristique fringilla. Aenean vel faucibus leo, ac iaculis sem. Suspendisse in erat id leo ultricies euismod eget et ex. Praesent tempus magna justo, a ultrices sem molestie non. Phasellus id mi quis dolor sollicitudin condimentum. Maecenas blandit leo nulla, a convallis ex laoreet vel. Maecenas iaculis massa placerat leo rutrum, et luctus diam sollicitudin. Cras nisl orci, ullamcorper non nisi eu, ultricies facilisis purus.</p>
+                <p class="about__text">Suspendisse potenti. Cras cursus ex nulla, ac faucibus leo suscipit in. Nulla maximus pellentesque sapien, et tincidunt nisl malesuada feugiat. Cras ac tortor hendrerit, tristique elit sed, placerat justo. Mauris sit amet malesuada nisl, vel tincidunt eros. Cras eget tempus nibh. Mauris rutrum risus at enim sollicitudin, sed posuere lectus suscipit. Morbi velit felis, viverra et quam ut, tincidunt cursus nisl. Phasellus tincidunt, ex bibendum viverra bibendum, mi nisi ultrices elit, laoreet faucibus massa est a massa.</p>
+                <a href="" class="button about__button">Read more</a>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICES -->
+    <div id="services" class="services bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="services__header">
+                    <h4 class="section-header-top">Lorem ipsum</h4>
+                    <h2 class="section-header-main">Our services</h2>
+                </div>
+                <div class="col-md-4 col-sm-6 services__item">
+                    <div class="services__content">
+                        <div class="services__icon"><i class="fa fa-users"></i></div>
+                        <h3 class="services__title">Some service</h3>
+                        <p class="services__text">Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 services__item">
+                    <div class="services__content">
+                        <div class="services__icon"><i class="fa fa-comments"></i></div>
+                        <h3 class="services__title">Some service</h3>
+                        <p class="services__text">Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 services__item">
+                    <div class="services__content">
+                        <div class="services__icon"><i class="fa fa-trophy"></i></div>
+                        <h3 class="services__title">Some service</h3>
+                        <p class="services__text">Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 services__item">
+                    <div class="services__content">
+                        <div class="services__icon"><i class="fa fa-star"></i></div>
+                        <h3 class="services__title">Some service</h3>
+                        <p class="services__text">Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 services__item">
+                    <div class="services__content">
+                        <div class="services__icon"><i class="fa fa-plane"></i></div>
+                        <h3 class="services__title">Some service</h3>
+                        <p class="services__text">Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 services__item">
+                    <div class="services__content">
+                        <div class="services__icon"><i class="fa fa-graduation-cap"></i></div>
+                        <h3 class="services__title">Some service</h3>
+                        <p class="services__text">Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SUBSCRIBE -->
+    <div class="subscribe bg-dark-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <h3 class="subscribe__header">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
+                    <p class="subscribe__text">Cras ac tortor hendrerit, tristique elit sed, placerat justo.</p>
+                </div>
+                <div class="col-md-4 col-sm-12 text-center">
+                    <a href="" class="button subscribe__button">Subscribe now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- WORKS -->
+    <div id="works" class="works">
+        <div class="container">
+            <div class="row">
+                <div class="works__header">
+                    <h4 class="section-header-top">Morbi rhoncus</h4>
+                    <h2 class="section-header-main">Our works</h2>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="works__thumb works__thumb-1">
+                        <div class="works__overlay">
+                            <a class="circle"><i class="fa fa-external-link fa-2x fa-inverse"></i></a>
+                            <h3>ut pretium leo vel</h3>
+                            <p>Category</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="works__thumb works__thumb-2">
+                        <div class="works__overlay">
+                            <a class="circle"><i class="fa fa-external-link fa-2x fa-inverse"></i></a>
+                            <h3>ut pretium leo vel</h3>
+                            <p>Category</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="works__thumb works__thumb-3">
+                        <div class="works__overlay">
+                            <a class="circle"><i class="fa fa-external-link fa-2x fa-inverse"></i></a>
+                            <h3>ut pretium leo vel</h3>
+                            <p>Category</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="works__thumb works__thumb-4">
+                        <div class="works__overlay">
+                            <a class="circle"><i class="fa fa-external-link fa-2x fa-inverse"></i></a>
+                            <h3>ut pretium leo vel</h3>
+                            <p>Category</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="works__thumb works__thumb-5">
+                        <div class="works__overlay">
+                            <a class="circle"><i class="fa fa-external-link fa-2x fa-inverse"></i></a>
+                            <h3>ut pretium leo vel</h3>
+                            <p>Category</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="works__thumb works__thumb-6">
+                        <div class="works__overlay">
+                            <a class="circle"><i class="fa fa-external-link fa-2x fa-inverse"></i></a>
+                            <h3>ut pretium leo vel</h3>
+                            <p>Category</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div id="contact" class="contact bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 contact__item title">
+                    <h4 class="section-header-top">Tristique</h4>
+                    <h2 class="section-header-main">Contact</h2>
+                </div>
+                <div class="col-lg-3 col-md-4 contact__item address">
+                    <div class="circle"><i class="fa fa-map-marker fa-2x fa-inverse"></i></div>
+                    <a href="#">2619 Old Fort Rd<br>Fort Washington, PA 19034</a>
+                </div>
+                <div class="col-lg-3 col-md-4 contact__item phone">
+                    <div class="circle"><i class="fa fa-phone fa-2x fa-inverse"></i></div>
+                    <a href="tel:6105160418">610-516-0418</a>
+                </div>
+                <div class="col-lg-3 col-md-4 contact__item email">
+                    <div class="circle"><i class="fa fa-at fa-2x fa-inverse"></i></div>
+                    <a href="mailto:layout02@gmail.com">layout.02@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MAP -->
+    <div class="container-fluid">
+        <div class="col-md-12" id="map-canvas"></div>
+    </div>
+    <!-- FOOTER -->
+    <div class="container footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <span class="copyright">Copyright 2016 &copy; Layout.02</span>
+                </div>
+                <div class="col-md-4 col-sm-12 social-buttons">
+                    <a class="social__icon" href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a class="social__icon" href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a class="social__icon" href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                    <a class="social__icon" href="#"><i class="fa fa-pinterest-p fa-lg"></i></a>
+                    <a class="social__icon" href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <ul class="quicklinks">
+                        <li><a class="quicklinks__privacy" href="#">Privacy policy</a></li>
+                        <li><a class="quicklinks__terms" href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCROLL TO TOP BUTTON -->
+    <div id="toTop"><i class="fa fa-chevron-up"></i></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
